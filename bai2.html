@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var number=prompt("Nhập số: ",0);
+    var s=number.toString();
+    var result=[s[0]];
+    for (var i=1;i<s.length;i++){
+      if(parseInt(s[i-1])%2==0 && parseInt(s[i])%2==0){
+        result.push('-');
+        result.push(s[i]);
+      }
+      else result.push(s[i]);
+    }
+    alert(result.join(''));
+  </script>
+</body>
+</html>

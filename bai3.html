@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var s=prompt("Nhập chuỗi: ");
+    s=s.toUpperCase();
+    var result=[]
+    result.push(s[0].toLowerCase());
+    for (var i=1;i<s.length;i++){
+      if (s[i-1]==' ') result.push(s[i].toLowerCase());
+      else result.push(s[i]);
+    }
+    alert(result.join(""));
+  </script>
+</body>
+</html>
